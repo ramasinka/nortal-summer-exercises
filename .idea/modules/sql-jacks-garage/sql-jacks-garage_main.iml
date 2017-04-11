@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":sql-jacks-garage:main" external.linked.project.path="$MODULE_DIR$/../../../sql-jacks-garage" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="nortal summer uzduotis" external.system.module.type="sourceSet" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../../sql-jacks-garage/build/classes/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../sql-jacks-garage/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sql-jacks-garage/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../sql-jacks-garage/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: org.hsqldb:hsqldb:2.3.4" level="project" />
+    <orderEntry type="library" name="Gradle: commons-dbutils:commons-dbutils:1.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-simple:1.7.14" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.14" level="project" />
+  </component>
+</module>
