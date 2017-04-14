@@ -10,23 +10,23 @@
 						<th data-ng-click="vm.sortType='id'; vm.sortReverse = !vm.sortReverse">
 							<i class="fa" data-ng-class="{'fa-sort': vm.sortType!=='id', 'fa-sort-desc': vm.sortType=='id' && !vm.sortReverse, 'fa-sort-asc': vm.sortType=='id' && vm.sortReverse}"></i> Identification number
 						</th>
-						<th>
-							<i class="fa" data-ng-class="{'fa-sort': vm.sortType!=='name', 'fa-sort-desc': vm.sortType=='name' && !vm.sortReverse, 'fa-sort-asc': vm.sortType=='name' && vm.sortReverse}"></i> name
+						<th data-ng-click="vm.sortType='name'; vm.sortReverse = !vm.sortReverse">
+							<i class="fa" data-ng-class="{'fa-sort': vm.sortType!=='name', 'fa-sort-desc': vm.sortType=='name' && !vm.sortReverse, 'fa-sort-asc': vm.sortType=='name' && vm.sortReverse}"></i> User name
 						</th>
 						<th>
-							<i class="fa fa-sort"></i> Img
+							<i class="fa"></i> Avatar
 						</th>
 
 						<th>
-							<i class="fa fa-sort"></i> Actions
+							<i class="fa"></i> Actions
 						</th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr data-ng-repeat="row in vm.rows | orderBy:vm.sortType:vm.sortReverse | limitTo:5:(vm.page * 5 + 1)">
-						<td>{{::row.id || '-'}}</td>
-						<td>{{::row.name || '-'}}</td>
-						<td><img src="{{::row.img || '-'}}" alt="some_text" style="width:width;height:height;"></td>
+					<tr data-ng-repeat="row in vm.rows | orderBy:vm.sortType:vm.sortReverse | limitTo:3:(vm.page * 3)">
+						<td>{{::row.id}}</td>
+						<td>{{::row.name}}</td>
+						<td><img src="{{::row.img}}" alt="some_text" style="width:width;height:height;"></td>
 						<td>
 							<a href="#0">Edit</a>
 						</td>
@@ -52,8 +52,11 @@
 						</a>
 					</li>
 					<li data-ng-class="{'active': vm.page==0}"><a data-ng-click="vm.page=0">1</a></li>
-					<li><a data-ng-click="vm.page=1" data-ng-class="{'active': vm.page==1}">2</a></li>
+					<!--<li><a data-ng-click="vm.page=1" data-ng-class="{'active': vm.page==1}">2</a></li>-->
+					<li data-ng-class="{'active': vm.page==1}"><a data-ng-click="vm.page=1">2</a></li>
 					<li data-ng-class="{'active': vm.page==2}"><a data-ng-click="vm.page=2">3</a></li>
+					<li data-ng-class="{'active': vm.page==3}"><a data-ng-click="vm.page=3">4</a></li>
+
 					<li>
 						<a aria-label="Next">
 							<span aria-hidden="true">&raquo;</span>

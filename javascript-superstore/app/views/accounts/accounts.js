@@ -1,10 +1,5 @@
 (function() {
 
-var usersDataURL = "https://reqres.in/api/users?per_page=100";
-  $.getJSON( usersDataURL, {
-    format: "json"
-  })
-
 	"use strict";
 
 	angular.module('app.accounts', ['ui.router'])
